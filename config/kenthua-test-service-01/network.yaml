@@ -1,0 +1,10 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeNetwork
+metadata:
+  name: cc-vpc
+  namespace: kenthua-test-service-01
+  annotations:
+    client.lifecycle.config.k8s.io/mutation: ignore
+spec:
+  autoCreateSubnetworks: false
+  routingMode: REGIONAL
